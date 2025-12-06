@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Espace Vendeur – 2ST</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container" style="max-width:800px;margin:40px auto">
+    <h1>Espace Vendeur 2ST</h1>
+    <div style="background:#fff;padding:30px;border-radius:16px;box-shadow:var(--shadow)">
+      <h2>+ Ajouter un produit</h2>
+      <form id="addform">
+        <input type="text" placeholder="Titre" required><br><br>
+        <input type="number" placeholder="Prix FCFA" required><br><br>
+        <input type="text" placeholder="Ville & quartier" required><br><br>
+        <textarea placeholder="Description" rows="4"></textarea><br><br>
+        <input type="file" multiple accept="image/*"><br><br>
+        <button type="submit" class="btn btn-cta">Publier maintenant</button>
+      </form>
+    </div>
+
+    <div style="margin-top:40px;padding:20px;background:#fff0f0;border-radius:12px;font-size:0.9rem">
+      <strong>Barème commission :</strong><br>
+      < 500 F → 0 F | 500-2000 F → 200 F | > 2000 F → 500 F (flexible)
+    </div>
+  </div>
+  <script src="assets/js/seller.js"></script>
+</body>
+</html>
