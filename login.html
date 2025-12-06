@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Connexion – 2ST</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="container" style="max-width:420px;margin:80px auto">
+    <h1 style="text-align:center">Connexion</h1>
+    <div style="background:#fff;padding:40px;border-radius:16px;box-shadow:var(--shadow);margin-top:30px">
+      <input type="tel" id="phone" placeholder="Numéro WhatsApp" style="width:100%;padding:16px;border-radius:12px;border:1px solid #ddd"><br><br>
+      <button id="sendcode" class="btn btn-cta" style="width:100%">Recevoir le code WhatsApp</button>
+      <div id="codebox" style="display:none;margin-top:20px">
+        <input type="text" id="code" placeholder="Code à 6 chiffres" maxlength="6" style="width:100%;padding:16px;border-radius:12px;border:1px solid #ddd"><br><br>
+        <button id="verify" class="btn btn-cta" style="width:100%">Me connecter</button>
+      </div>
+      <p style="text-align:center;margin-top:25px">Nouveau ? <a href="signup-client.html">Créer un compte</a></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("sendcode").onclick = () => {
+      alert("Code envoyé par WhatsApp ! (simulation)");
+      document.getElementById("codebox").style.display = "block";
+    };
+    document.getElementById("verify").onclick = () => {
+      alert("Connecté !");
+      location.href = "index.html";
+    };
+  </script>
+</body>
+        </html>
